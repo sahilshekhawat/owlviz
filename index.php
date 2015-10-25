@@ -80,6 +80,8 @@ var url = '<?=$url?>',
 <h1>Graph</h1>
 <div style="float: left;border-width: 1px; border-style: solid;width:100%;min-height:500px;height:100%" id='chart'></div>
 <h1>Json</h1>
+
+<a onclick="window.open('data:application/rdf+xml,' + document.getElementById('json').innerHTML);">Download Json</a>
 <div id="json"></div>
 
 <script type="text/javascript" src='js/main.js'>
