@@ -1,4 +1,4 @@
-<?
+<?php
 include_once('namespaces.php');
 function uri2curie($uri){
 	global $ns;

@@ -1,4 +1,4 @@
-<?
+<?php
 $ns = array();
 $ns["tw"]		=	"http://tw.rpi.edu/schema/";
 $ns["yago"]		=	"http://dbpedia.org/class/yago/";

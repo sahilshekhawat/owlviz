@@ -1,4 +1,4 @@
-<?
+<?php
 $url = get_current_url();//"about.ttl";
 if(isset($_GET['url'])){
   $url = $_GET['url'];

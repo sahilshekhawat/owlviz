@@ -61,6 +61,7 @@ function createPredicateFilters(up){
 	updateFilters();
 }
 function init(json){
+	document.getElementById("json").innerHTML = JSON.stringify(json);
 	literals = json.literals;
 	for(i in json.links){
 		uniquePredicates[json.links[i].name] = 1;
@@ -232,7 +233,9 @@ function init(json){
 
 
 function restart(myUrl){
+	console.log("###");
 	d3.json('rdf2json.php?url='+encodeURIComponent(myUrl), function(json){
+		console.log("@@@");
 		d3.select("#waiting").style("display", "none");
 		init(json);
 	});

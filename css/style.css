@@ -1,9 +1,7 @@
 body {
   font: 14px Helvetica Neue;
-  text-rendering: optimizeLegibility;
   margin-top: 1em;
-  overflow-y: scroll;
-  font-weight: 300;
+  font-weight: 200;
 }
 h1 {
   font-size: 36px;

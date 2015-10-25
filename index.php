@@ -1,4 +1,4 @@
-<?
+<?php
 $url = get_current_url();//"about.ttl";
 if(isset($_GET['url'])){
   $url = $_GET['url'];
@@ -59,16 +59,8 @@ var url = '<?=$url?>',
 <body>
 <div class="container-fluid">
  <div class="row-fluid">
-  <div class="span2"><h1 style="display: inline"><a href='.'>Visual RDF</a></h1></div>
-  <div class="span2"><a href='https://github.com/alangrafu/visualRDF' target="_new"><img alt="github icon" src='img/github.ico'/></a></div>
-  <div class="span2"><span id="dialogButton" style="text-decoration:none;vertical-align:middle;font-weight:bold;font-size:200%;font-family:courier;color:black;cursor: hand; cursor: pointer;">&lt;/&gt;</span></div>
   <div class="span6">
-   <strong style="color: red">Usage: </strong> <strong>Scroll</strong> &#8594; Zoom. <strong>Drag node</strong> &#8594; Move node. <strong>Drag background</strong> &#8594; Move graph.
-  </div>
- </div>
- <div class="row-fluid">
-  <div class="span6">
-   <form method="get" action="." class="form-inline">
+   <form method="get" action="." class="form-inline" style="margin-top: 3px;">
     <input type='text' id='url' name='url' value='<?=$url?>' size='100'/>
     <input type="submit" class="btn" value="Redraw"/>
    </form>
@@ -85,7 +77,11 @@ var url = '<?=$url?>',
   <img id="waiting" alt="waiting icon" src="img/waiting.gif"/>
  </div>
 </div>
+<h1>Graph</h1>
 <div style="float: left;border-width: 1px; border-style: solid;width:100%;min-height:500px;height:100%" id='chart'></div>
+<h1>Json</h1>
+<div id="json"></div>
+
 <script type="text/javascript" src='js/main.js'>
 </script>
 
